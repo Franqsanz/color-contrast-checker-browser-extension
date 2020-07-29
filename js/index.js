@@ -1,5 +1,5 @@
 const btn = document.querySelector('#btn');
-const section = document.querySelector('section');
+const contentResult = document.querySelector('.contentResult');
 
 function hexToRgb(hex) {
     let shorthandRegex = /^#?([a-f\d])([a-f\d])([a-f\d])$/i;
@@ -71,5 +71,5 @@ btn.addEventListener('click', () => {
             : `<p class="red">✖ FAIL </p>`}
         </li>
     `;
-    section.innerHTML = result;
+    contentResult.innerHTML = result;
 });

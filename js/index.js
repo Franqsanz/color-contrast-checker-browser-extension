@@ -47,25 +47,25 @@ btn.addEventListener('click', () => {
 
     const result = `
         <li>
-            AA-Nivel de texto grande:
+            <h2>AA</h2> Nivel de texto grande
             ${ratio < 1 / 3
             ? `<p class="green">✔ PASS</p>`
             : `<p class="red">✖ FAIL</p>`}
         </li>
         <li>
-            AA-Nivel de texto pequeño:
+            <h2>AA</h2> Nivel de texto pequeño
             ${ratio < 1 / 4.5
             ? `<p class="green">✔ PASS</p>`
             : `<p class="red">✖ FAIL </p>`}
         </li>
         <li>
-            AAA-Nivel de texto grande:
+            <h2>AAA</h2> Nivel de texto grande
             ${ratio < 1 / 4.5
             ? `<p class="green">✔ PASS</p>`
             : `<p class="red">✖ FAIL </p>`}
         </li>
         <li>
-            AAA-Nivel de texto pequeño:
+            <h2>AAA</h2> Nivel de texto pequeño
             ${ratio < 1 / 7
             ? `<p class="green">✔ PASS</p>`
             : `<p class="red">✖ FAIL </p>`}

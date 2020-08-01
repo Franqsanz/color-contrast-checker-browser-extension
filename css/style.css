@@ -8,7 +8,7 @@
 }
 
 body {
-  width: 500px;
+  width: 530px;
   margin: 0;
   font-family: var(--font-arial);
   background: #ebebeb;
@@ -29,7 +29,7 @@ header {
 
 .contentLogo {
   width: 400px;
-  font-size: 1.8rem;
+  font-size: 2rem;
   padding: 1.2rem;
   text-align: var(--text-align-center);
   margin: 10px auto;
@@ -51,7 +51,7 @@ header {
   padding: 0.7rem;
   margin: 15px auto;
   flex-direction: column;
-  box-shadow: 0 5px 15px #acacac;
+  box-shadow: 7px 7px 0 #acacac;
   border-radius: 10px;
   border: 1px solid #c2c2c2;
 }
@@ -98,7 +98,7 @@ button:focus {
 
 .contentResult {
   display: flex;
-  padding: 1rem;
+  padding: 1.1rem;
   font-size: var(--font-size-small);
   text-align: var(--text-align-center);
 }
@@ -111,9 +111,9 @@ h2 {
 li {
   list-style: none;
   background: white;
-  margin: 5px;
+  margin: 0 7px 0 7px;
   padding: 0.7rem;
-  box-shadow: 0 5px 15px #acacac;
+  box-shadow: 7px 7px 0 #acacac;
   border-radius: 10px;
   border: 1px solid #c2c2c2;
 }

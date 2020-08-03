@@ -6,11 +6,12 @@
   "version": "0.0.1",
   "content_scripts": [
     {
-      "matches": ["https://*.com/*"],
+      "matches": ["<all_urls>"],
       "js": ["/js/index.js"]
     }
   ],
   "browser_action": {
-    "default_popup": "popup.html"
+    "default_popup": "popup.html",
+    "default_icon": "ico.png"
   }
 }

@@ -12,6 +12,7 @@
   ],
   "browser_action": {
     "default_popup": "popup.html",
-    "default_icon": "ico.png"
+    "default_icon": "ico.png",
+    "default_title": "Color Contrast Checker"
   }
 }

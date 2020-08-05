@@ -1,17 +1,27 @@
 :root {
-  --orange: #ff7d27;
   --font-arial: Arial, Helvetica, sans-serif;
   --font-trebuchet: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
     'Lucida Sans', Arial, sans-serif;
   --font-size-small: 0.9rem;
-  --text-align-center: center;
+  --center: center;
+  --color-background-body: #ebebeb;
+  --color-background-scrollbar-thumb: #505050;
+  --color-background-white: #ffffff;
+  --box-shadow: #acacac;
+  --color-border: #c2c2c2;
+  --color-background-black: #000000;
+  --color-button: #fafafa;
+  --color-button-focus: #ffc700;
+  --orange: #ff7d27;
+  --green: #008000;
+  --red: #e71111;
 }
 
 body {
   width: 530px;
   margin: 0;
   font-family: var(--font-arial);
-  background: #ebebeb;
+  background: var(--color-background-body);
 }
 
 ::-webkit-scrollbar {
@@ -20,7 +30,7 @@ body {
 
 ::-webkit-scrollbar-thumb {
   border-radius: 5px;
-  background: #505050;
+  background: var(--color-background-scrollbar-thumb);
 }
 
 header {
@@ -31,7 +41,7 @@ header {
   width: 400px;
   font-size: 2rem;
   padding: 1.2rem;
-  text-align: var(--text-align-center);
+  text-align: var(--center);
   margin: 10px auto;
   font-weight: 700;
   font-style: italic;
@@ -41,19 +51,19 @@ header {
 .contentChecker {
   width: 60%;
   margin: auto;
-  text-align: var(--text-align-center);
+  text-align: var(--center);
   font-size: var(--font-size-small);
 }
 
 .inputs {
-  background: white;
+  background: var(--color-background-white);
   display: flex;
   padding: 0.7rem;
   margin: 15px auto;
   flex-direction: column;
-  box-shadow: 7px 7px 0 #acacac;
+  box-shadow: 7px 7px 0 var(--box-shadow);
   border-radius: 10px;
-  border: 1px solid #c2c2c2;
+  border: 1px solid var(--color-border);
 }
 
 p {
@@ -64,10 +74,10 @@ input,
 button {
   padding: 0.4rem;
   margin: 10px;
-  text-align: var(--text-align-center);
+  text-align: var(--center);
   font-size: 1.1rem;
   border-radius: 5px;
-  border: 1px solid #c2c2c2;
+  border: 1px solid var(--color-border);
   outline: none;
 }
 
@@ -79,9 +89,9 @@ button {
   width: 90%;
   padding: 0.4rem;
   outline: none;
-  background: #000000;
-  color: #fafafa;
-  transition: all 0.1s;
+  background: var(--color-background-black);
+  color: var(--color-button);
+  transition: 0.1s;
   border: none;
   margin: auto;
   border-radius: 5px;
@@ -93,14 +103,14 @@ button:active {
 }
 
 button:focus {
-  outline: 1px solid #ffc700;
+  outline: 1px solid var(--color-button-focus);
 }
 
 .contentResult {
   display: flex;
   padding: 1.1rem;
   font-size: var(--font-size-small);
-  text-align: var(--text-align-center);
+  text-align: var(--center);
 }
 
 h2 {
@@ -110,12 +120,12 @@ h2 {
 
 li {
   list-style: none;
-  background: white;
+  background: var(--color-background-white);
   margin: 0 7px 0 7px;
   padding: 0.7rem;
-  box-shadow: 7px 7px 0 #acacac;
+  box-shadow: 7px 7px 0 var(--box-shadow);
   border-radius: 10px;
-  border: 1px solid #c2c2c2;
+  border: 1px solid var(--color-border);
 }
 
 .green,
@@ -126,26 +136,26 @@ li {
 }
 
 .green {
-  color: green;
+  color: var(--green);
 }
 
 .red {
-  color: #e71111;
+  color: var(--red);
 }
 
 .pInfo {
   width: 60%;
   margin: auto;
   padding: 15px;
-  text-align: var(--text-align-center);
+  text-align: var(--center);
   font-size: var(--font-size-small);
 }
 
 footer {
-  text-align: var(--text-align-center);
+  text-align: var(--center);
   font-size: var(--font-size-small);
   padding: 1rem;
-  color: #000000;
+  color: var(--color-background-black);
   font-weight: bold;
   font-style: italic;
   background: var(--orange);
